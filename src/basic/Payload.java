@@ -25,4 +25,16 @@ public class Payload {
 				+ "    }\r\n" + "    \r\n" + "    \r\n" + "    \r\n" + "  ]\r\n" + "}\r\n" + "";
 
 	}
+
+	public static String addBook(String isbn, String aisle) {
+
+		String payloadString = "{\r\n" + "\"name\":\"Learn Appium Automation with Java\",\r\n" + "\"isbn\":\"" + isbn
+				+ "\",\r\n" + "\"aisle\":\"" + aisle + "\",\r\n" + "\"author\":\"Joh2n foe\"\r\n" + "}";
+		return payloadString;
+	}
+
+	public static String deleteBook(String bookIdString) {
+		// TODO Auto-generated method stub
+		return "{\r\n" + " \r\n" + "\"ID\" : \"" + bookIdString + "\"\r\n" + " \r\n" + "} \r\n" + "";
+	}
 }
